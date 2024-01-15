@@ -1,0 +1,124 @@
+* {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Class */
+.container {
+    width: 82%;
+    margin: auto;
+}
+
+/* Header Styles */
+
+/* nav styles */
+
+.nav-items {
+    padding-top: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.company-name span {
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.menu-items-home {
+    text-decoration: none;
+    color: #FF5400;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.menu-items {
+    text-decoration: none;
+    padding-left: 44px;
+    color: #424247;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Banner Styles */
+.banner{
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../Images/banner-img.png")    ;
+    padding: 106px 11%;
+    margin-top: 50px;
+    border-radius: 16px;
+    text-align: center;
+}
+.banner-header{
+    color: #FFF;
+font-size: 4rem;
+font-weight: 800;
+}
+
+.banner-desc{
+    color: #FFF;
+font-size: 1rem;
+font-weight: 400;
+max-width: 676px;
+margin-top: 24px;
+margin-bottom: 48px;
+}
+
+.banner-form-contents{
+    padding: 16px;
+    border-radius: 8px;
+background-color: rgba(255, 255, 255, 0.30);
+}
+
+.banner-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* flex: 1; */
+}
+
+.banner-form input::placeholder, select{
+    color: rgba(19, 19, 24, 0.50);
+font-size: 1rem;
+font-weight: 400;
+padding-left: 12px;
+}
+
+.banner-form input[type="text"]{
+    width: 23%;
+    height: 58px;
+    border-radius: 8px;
+    border: 0;
+}
+.banner-form select{
+    width: 23%;
+    height: 58px;
+    border-radius: 8px;
+    border: 0; 
+}
+.banner-buton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    border: 0;
+background-color: #FF5400;
+color: #FFF;
+font-size: 1rem;
+font-weight: 700;
+}
