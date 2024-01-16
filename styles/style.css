@@ -38,6 +38,7 @@ margin-top: 26px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .company-name {
@@ -58,6 +59,16 @@ margin-top: 26px;
     font-weight: 800;
 }
 
+#hamburger-menu{
+    list-style: none;
+    display: flex;
+    gap: 1.8em;
+    justify-content: space-between;
+}
+#menu-box, label{
+    display: none;
+}
+
 .menu-items-home {
     text-decoration: none;
     color: #FF5400;
@@ -68,7 +79,6 @@ margin-top: 26px;
 
 .menu-items {
     text-decoration: none;
-    padding-left: 44px;
     color: #424247;
     font-size: 1.2rem;
     font-weight: 400;
@@ -180,31 +190,38 @@ margin-top: 30px;
 .destination-img img{
     width: 100%;
     height: 100%;
+    /* object-fit: cover; */
 }
 
 .destination-img-1{
     grid-area: img-1;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-2{
     grid-area: img-2;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-3{
     grid-area: img-3;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-4{
     grid-area: img-4;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-5{
     grid-area: img-5;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-6{
     grid-area: img-6;
     position: relative;
+    object-fit: cover;
 }
 .destination-img-7{
     grid-area: img-7;
@@ -553,6 +570,11 @@ text-align: center;
 
 
 /* Footer Section */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
 .footer-content{
     /* display: flex; */
     /* flex-direction: column; */
@@ -599,7 +621,6 @@ font-weight: 800;
 
 .footer-cr{
     margin-top: 50px;
-    margin-bottom: 110px;
 }
 
 
@@ -623,15 +644,25 @@ font-weight: 800;
 
 @media screen and (max-width: 600px) {
     .container {
-        width: 95%;
+        width: 93%;
         margin: auto;
     }
-    
-    .nav-items {
-        justify-content: space-between;
-        align-items: center;
+
+ 
+
+    .all-menu-items{
+        width: 100%;
+        max-width: 0;
+        overflow: hidden;
     }
 
+
+    label{
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        align-items: end;
+    }
 
     .menu-items {
         text-decoration: none;
@@ -670,5 +701,94 @@ font-weight: 800;
         width: 100%;
         height: 100%;
     }
-   
+    .destination-text, .choose-us-text, .deals-header{
+        width: 90%;
+    }
+    .destination-img {
+        /* display: grid; */
+        /* border-radius: 16px; */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        gap: 24px;
+        grid-template-areas:
+            "img-1"
+            "img-2"
+            "img-3"
+            "img-4"
+            "img-5"
+            "img-6"
+            "img-7";
+    }
+    .destination-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        height: 300px;
+        border-radius: 16px;
+    } 
+    .choose-us-reasons{
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 24px;
+            grid-template-areas:
+                "hotels"
+                "services"
+                "price";
+    }
+    .tour-paclage-details {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .tour-location-1 {
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 16px; */
+        padding: 300px 20px 20px 20px;
+        justify-content: center;
+    }
+    .tour-location-2 {
+        background-size: cover;
+        background-position: center;
+        /* border-radius: 16px; */
+        padding: 300px 20px 20px 20px;
+        justify-content: center;
+    }
+    .button-all-packages {
+        margin: 48px 31% 0px;
+    }
+    .perfect-place {
+        flex-direction: column;
+    }
+    
+.perfect-place-items, .perfect-place-video {
+    width: 100%;
+}
+.customer-review-section {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 24px;
+    grid-template-areas:
+        "info-1" 
+        "info-2"
+        "info-3"
+        "info-4";
+}
+.newsletter-section {
+    flex-direction: column;
+}
+.newsletter-text {
+    width: 86%;
+}
+
+footer {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.footer-hr {
+    width: 93%;
+}
+
+
 }
