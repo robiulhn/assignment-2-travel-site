@@ -606,17 +606,17 @@ select {
 }
 
 .savings-offer {
-    width: 50%;
+    width: 19rem;
     height: auto;
     border-radius: 16px;
     background: #FF5400;
     border: 0;
-    padding: 24px;
+    padding: 20px;
     position: absolute;
     z-index: 1;
     transform: rotate(-19.628deg);
     bottom: 53px;
-    right: 10px;
+    right: 14px;
 }
 
 .travel-site {
@@ -873,9 +873,18 @@ font-weight: 300;
     }
 
     .savings-offer {
-        width: 62%;
-        padding: 15px;
+        width: 17rem;
+        padding: 5px auto;
+        bottom: 51px;
+        right: 11px;
     }
+
+    .travel-site {
+        font-size: 1rem;
+    }
+    
+    .travel-discount-offer {
+        font-size: 1.4rem;
 
     .footer-content {
         width: 100%;
